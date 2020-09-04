@@ -1,0 +1,22 @@
+\sqrt{\frac{x^{4}}{\left(1+x^{3}+x^{4}\right)^{2}}+\frac{1}{\left(2+x\right)^{2}}+\frac{x^{4}}{\left(x^{3}+1+x\right)^{2}}}
+
+
+
+
+WRONG
+
+-x^{3}\left(1-0.5x\right)\left(\frac{1}{x^{2}}+1+x^{4}\right)+\left(\frac{1}{2}\left(0.5x\right)^{2}-0.5x\right)\left(1+2x\right)+\frac{1}{2}x^{6}\left(\frac{1}{x^{5}}+1+x^{7}\right)
+
+
+\left(\frac{1}{2}\left(0.5x\right)^{2}-0.5x\right)\left(1+2x\right)
+
+
+
+
+
+
+Last ones
+
+\frac{-\left(2x^{6}+2x^{10}-2x^{3}-2x^{4}\right)+\sqrt{\left(2x^{6}+2x^{10}-2x^{3}-2x^{4}\right)^{2}-4\left(x^{6}+x^{10}-2x^{3}-2x^{4}+1+\frac{1}{x^{2}}\right)\left(x^{6}+x^{4}+x^{10}-0.25\right)}}{2\left(x^{6}+x^{10}-2x^{3}-2x^{4}+1+\frac{1}{x^{2}}+x^{4}\right)}
+
+\left(-x^{3}+x^{4}\right)\left(1-0.5x\right)\left(\frac{1}{x^{2}}+1+x^{4}\right)+\left(\frac{1}{2}\left(0.5x\right)^{2}-0.5x\right)\left(1+2x\right)+\frac{1}{2}\left(-x^{3}+x^{4}\right)^{2}\left(\frac{1}{x^{5}}+1+x^{7}\right)

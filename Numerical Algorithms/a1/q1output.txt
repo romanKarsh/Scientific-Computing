@@ -1,0 +1,5 @@
+a1q1script
+max of |vf - v1| is  7.793605431946460e-02
+max of |vf - v2| is  5.304603938499186e-03
+max of |vf - v3| is  3.397003331530035e-04
+max of |vf - v3H| is  1.607907793965024e-03

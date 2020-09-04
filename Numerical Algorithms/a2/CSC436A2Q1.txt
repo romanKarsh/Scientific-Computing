@@ -1,0 +1,43 @@
+y=\left\{0\le x\le1:x^{5},1\le x\le2:x^{5}-6\left(x-1\right)^{5},2\le x\le3:x^{5}-6\left(x-1\right)^{5}+15\left(x-2\right)^{5},\ 3\le x\le4:x^{5}-6\left(x-1\right)^{5}+15\left(x-2\right)^{5}-20\left(x-3\right)^{5},4\le x\le5:x^{5}-6\left(x-1\right)^{5}+15\left(x-2\right)^{5}-20\left(x-3\right)^{5}+15\left(x-4\right)^{5},5\le x\le6:x^{5}-6\left(x-1\right)^{5}+15\left(x-2\right)^{5}-20\left(x-3\right)^{5}+15\left(x-4\right)^{5}-6\left(x-5\right)^{5},x<0:0,x>6:0\right\}
+
+
+
+
+
+
+fprintf('part a u(x) = 1 in [0, 1]\n');
+% generating the input x
+for p = 3:8
+    n = 2^p;
+    x = linspace(0, 1, n+1);
+    xd = [x(1) (x(1)+x(2))/2 x(2) (x(2)+x(3))/2 x(3:n-1) ...
+        (x(n-1)+x(n))/2 x(n) (x(n)+x(n+1))/2 x(n+1)];
+    y = ones(1, length(xd));
+    midx = zeros(1, length(x)-1);
+    for i = 1:length(x)-1
+       midx(i) = (x(i) + x(i+1))/2;
+    end
+    midy = ones(1, length(midx));
+    appmidy = qntspline(x, y, midx);
+    mv1 = max(abs(appmidy-midy));
+    fprintf('n = %d max at the midpoints is %22.15e\n', n, mv1);
+end
+
+
+
+
+u(x) = 1 in [0, 1]
+
+ans =
+
+  6×5 table
+
+     N     QuinticMidError    QuinticIntrError    CubicMidError    CubicIntrError
+    ___    _______________    ________________    _____________    ______________
+
+      8      2.2204e-16          3.5305e-14             0                0       
+     16      2.2204e-16          3.5305e-14             0                0       
+     32      2.2204e-16          3.5194e-14             0                0       
+     64      2.2204e-16          3.5194e-14             0                0       
+    128      2.2204e-16          4.0412e-14             0                0       
+    256      2.2204e-16          3.5083e-14             0                0       
